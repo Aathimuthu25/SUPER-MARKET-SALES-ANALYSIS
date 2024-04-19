@@ -37,7 +37,8 @@ end ;
 ```
 Result:
 
-![image](https://github.com/AhamedSahil/Project-1/assets/164605797/95b3e962-8e26-42d6-aaab-bc7aa2183484)
+![Img_1](https://github.com/Aathimuthu25/SUPER-MARKET-SALES-ANALYSIS/assets/158067286/29f17ccd-372b-45df-a83a-9d0a5e71295f)
+
 - coverted  invoice column into primary key
 ```mysql
 ALTER TABLE supermarket_sales.supermarket_sales
@@ -73,9 +74,11 @@ select product_line,sum(quantity) as total_sell from supermarket_sales group by 
 ```
 Result:
 
-![image](https://github.com/AhamedSahil/Project-1/assets/164605797/e384bbc0-b2f7-4d59-9dd6-52f8665bf8aa)
+![Img_2](https://github.com/Aathimuthu25/SUPER-MARKET-SALES-ANALYSIS/assets/158067286/ecfe5f9f-1353-40f7-b748-4f2402e7f922)
+
 ### <p align="center">Top Selling Product!</p>
-![image](https://github.com/AhamedSahil/SUPER-MARKET-SALES-ANALYSIS-/assets/164605797/af14b34c-50cf-46e1-9bbc-204555840a89)
+![Img_3](https://github.com/Aathimuthu25/SUPER-MARKET-SALES-ANALYSIS/assets/158067286/e7c17ebb-3ac3-4191-a90b-7ed2d3ea98ae)
+
 
 
 - finding the most profitable productline.
@@ -84,7 +87,8 @@ select product_line,sum(gross_income) as total_profit from supermarket_sales gro
 ```
 Result:
 
-![image](https://github.com/AhamedSahil/SUPER-MARKET-SALES-ANALYSIS-/assets/164605797/25cac7de-aef9-4cc8-9a27-34c2834ef034)
+![Img_4](https://github.com/Aathimuthu25/SUPER-MARKET-SALES-ANALYSIS/assets/158067286/6097a0b7-c8ef-49ae-802e-8b7b608812d8)
+
 
 - finding out the change in sells by their month respective to proudctline
 ```mysql
@@ -92,7 +96,8 @@ select _month,product_line,sum(total_sales) over(partition by product_line order
 ```
 Result:
 
-![image](https://github.com/AhamedSahil/SUPER-MARKET-SALES-ANALYSIS-/assets/164605797/5b3e1101-c907-40c7-a0d7-f58b0f001f99)
+![Img_5](https://github.com/Aathimuthu25/SUPER-MARKET-SALES-ANALYSIS/assets/158067286/b598f4c1-4238-4d43-933e-c13ff596d362)
+
 
 - Finding the avg profit  with respective to proudctline
 
@@ -101,7 +106,8 @@ select product_line, avg(gross_income) as Avg_profit from supermarket_sales grou
 ```
 Result:
 
-![image](https://github.com/AhamedSahil/SUPER-MARKET-SALES-ANALYSIS-/assets/164605797/bbf6881f-c2a5-4f49-a16d-315308a65908)
+![Img_6](https://github.com/Aathimuthu25/SUPER-MARKET-SALES-ANALYSIS/assets/158067286/9d8caed7-8f1a-41c1-8ba6-0485c72dcbac)
+
 
 - Finding out sum of quantity by respictive City and branch irrespictive to productline
 ```mysql
@@ -109,7 +115,8 @@ select City,branch,sum(quantity) from supermarket_sales group by city,branch;
 ```
 Result:
 
-![image](https://github.com/AhamedSahil/SUPER-MARKET-SALES-ANALYSIS-/assets/164605797/d68166ca-0b7d-4cac-9a1c-717e84d770ea)
+![Img_7](https://github.com/Aathimuthu25/SUPER-MARKET-SALES-ANALYSIS/assets/158067286/bff1a0a0-e54f-4856-973d-68f78ac9b16a)
+
 
 - Finding out the top most ratings with respect to Sentiment
 ```mysql
@@ -117,9 +124,11 @@ select sentiment,count(sentiment) as total_sentiment  from supermarket_sales gro
 ```
 Result:
 
-![image](https://github.com/AhamedSahil/SUPER-MARKET-SALES-ANALYSIS-/assets/164605797/9f4471cc-e748-4f2b-ac11-6a9b929ab190)
+![Img_8](https://github.com/Aathimuthu25/SUPER-MARKET-SALES-ANALYSIS/assets/158067286/b22008b1-8276-4da4-a2d8-f6eb9ca52c6f)
 
-![image](https://github.com/AhamedSahil/SUPER-MARKET-SALES-ANALYSIS-/assets/164605797/205e1dfe-d1be-4813-b017-d0993a5d1ca5)
+
+ ![Img_9](https://github.com/Aathimuthu25/SUPER-MARKET-SALES-ANALYSIS/assets/158067286/7175dcb7-85f0-4069-9820-aac9a78e6e37)
+
 
 
 - Finding out the Top 5  very good rating products
@@ -132,26 +141,4 @@ LIMIT 5;
 ```
 Result:
 
-![image](https://github.com/AhamedSahil/SUPER-MARKET-SALES-ANALYSIS-/assets/164605797/f552bb87-2e07-4594-a9e4-0c508caa9ea7)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![Img_10](https://github.com/Aathimuthu25/SUPER-MARKET-SALES-ANALYSIS/assets/158067286/0df0e00c-3913-4962-ac89-ef1d8f44f2a2)
