@@ -10,7 +10,7 @@ This repository contains code and resources for analyzing sales data from a supe
 
 [SQL Analysis (Code)](supermarket_sales_projects.sql)
 
-[Ppt presentation](sql_prjct.pptx)
+[Ppt presentation](https://github.com/Aathimuthu25/SUPER-MARKET-SALES-ANALYSIS/blob/main/sql_prjct.pptx)
 
 ### Data preparation
 
